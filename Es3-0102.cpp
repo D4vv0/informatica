@@ -1,3 +1,4 @@
+//Esercitazione in classe 01/02/2019
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -48,7 +49,7 @@ void area_triangolo()
 	cout << "\nInserici l'altezza del triangolo: ";
 	cin >> altezza;
 	area = base * altezza;
-	cout << "\nL'area assume valore¨ " << area << ".";
+	cout << "\nL'area assume valoreÂ¨ " << area << ".";
 }
 void area_cerchio()
 {

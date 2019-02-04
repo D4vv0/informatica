@@ -56,19 +56,25 @@ void scrivisoluzioni(float n1, float n2, float n3)
 	}
 	else
 	{
-		float D=delta(n1,n2,n3);
-		if (D == 0)
-		{
-			float ris = (-n2 + D) / (2 * n1);
-			cout << "\nL'unica soluzione risulta pari a " << ris;
-		}
+		float work= pow(n2,2) - (4 * n1 * n3);
+		if (work < 0)
+			cout << "\nDelta minore di zero.";
 		else
 		{
-			float ris1 = 0;
-			float ris2 = 0;
-			ris1 = (-n2 + D) / (2 * n1);
-			ris2 = (-n2 - D) / (2 * n1);
-			cout << "\nLe soluzioni risultano: 1) " << ris1 << "\t 2) " << ris2;
+			float D=delta(n1,n2,n3);
+			if (D == 0)
+			{
+				float ris = (-n2 + D) / (2 * n1);
+				cout << "\nL'unica soluzione risulta pari a " << ris;
+			}
+			else
+			{
+				float ris1 = 0;
+				float ris2 = 0;
+				ris1 = (-n2 + D) / (2 * n1);
+				ris2 = (-n2 - D) / (2 * n1);
+				cout << "\nLe soluzioni risultano: 1) " << ris1 << "\t 2) " << ris2;
+			}
 		}
 	}	
 }
